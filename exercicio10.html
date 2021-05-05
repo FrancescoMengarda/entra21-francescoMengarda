@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let A = Number(prompt("Digite a medida do lado A"));
+        let B = Number(prompt("Digite a medida do lado B"));
+        let C = Number(prompt("Digite a medida do lado C"));
+
+        if (A === B && A === C){
+            console.log("Equilátero");
+        } else if(A === B || A === C || B === C){
+            console.log("Isósceles");
+        } else {
+            console.log("Escaleno");
+        }
+    </script>
+</body>
+</html>
