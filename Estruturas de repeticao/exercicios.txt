@@ -43,7 +43,8 @@ Entrada:               Saída:
 4
 
 
-7) Faça um programa que receba um número N e mostre na tela todos os números ímpares de 0
+7) Faça um programa que receba um número N e mostre na tela todos os 
+números ímpares de 0
 até N. (Faça o teste de mesa)
 Entrada:                Saída:
 5                      1, 3, 5
@@ -51,7 +52,8 @@ Entrada:                Saída:
 8                      1, 3, 5, 7
 
 
-8) Crie um algoritmo que peça ao usuário um número e mostre na tela a tabuada (1 à 10) desse número.
+8) Crie um algoritmo que peça ao usuário um número e mostre na tela 
+a tabuada (1 à 10) desse número.
 Entrada:                Saída:
 2                       2 x 1 = 2
                         2 x 2 = 4
@@ -80,7 +82,8 @@ Entrada:                Saída:
 -9
 
 
-10) Elabore um  algoritmo que receba 10 números diferentes e mostre quantos são pares e quantos são ímpares.
+10) Elabore um  algoritmo que receba 10 números diferentes e mostre
+ quantos são pares e quantos são ímpares.
 Entrada:                 Saída:
 1                        Pares: 4
 9                        Ímpares: 6
@@ -94,8 +97,10 @@ Entrada:                 Saída:
 14
 
 
-11) Faça um script que receba valores inteiros e mostre na tela quantos desses valores recebidos estão no intervalo
-[10, 20] e quantos não estão. O programa irá parar de pedir números quando o usuário digitar um número negativo.
+11) Faça um script que receba valores inteiros e mostre na tela quantos
+ desses valores recebidos estão no intervalo
+[10, 20] e quantos não estão. O programa irá parar de pedir números
+ quando o usuário digitar um número negativo.
 Entrada:                Saída:
 10                      3 números estão no intervalo
 12                      2 números estão fora do intervalo
@@ -105,7 +110,8 @@ Entrada:                Saída:
 -1
 
 
-12) Construa um programa que leia vários valores númericos enquanto um valor negativo não for digitado. Após isso,
+12) Construa um programa que leia vários valores númericos enquanto
+ um valor negativo não for digitado. Após isso,
 mostre a média aritmética dos valores recebidos.
 Entrada:                Saída:
 3                       6
