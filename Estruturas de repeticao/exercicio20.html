@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = Number(prompt("Informe o primeiro número"));
+        let num2 = Number(prompt("Informe o segundo número"));
+        let cont1 = num1;
+        let cont2 = num2;
+        let somaPares = 0;
+        let multiImpares = 1;
+        while(cont1 >= cont2){
+            if(cont2 % 2 == 0){
+                somaPares += cont2;
+            } else {
+                multiImpares *= cont2;
+            }
+            cont2++;
+        }
+        console.log(somaPares, multiImpares);
+    </script>
+</body>
+</html>
