@@ -152,7 +152,8 @@ Entrada:                Saída:
 -100
 
 
-16) Crie um script que leia 5 valores e mostre qual o maior e o menor valor lido.
+16) Crie um script que leia 5 valores e mostre qual o maior e o
+ menor valor lido.
 Entrada:              Saída:
 -1                    O menor valor digitado foi -1
 0                     O maior valor digitado foi 9
@@ -182,7 +183,8 @@ Entrada:               Saída:
 0
 
 
-18) Faça um algoritmo que mostre os conceitos finais dos alunos de uma classe de 4 alunos.
+18) Faça um algoritmo que mostre os conceitos finais dos alunos de
+ uma classe de 4 alunos.
 a) a média de cada aluno será fornecida pelo usuário.
 b) a tabela de conceitos se encontra abaixo:
 +----------------+-----------+
@@ -195,8 +197,10 @@ b) a tabela de conceitos se encontra abaixo:
 +----------------+-----------+
 
 
-19) Escreva um algoritmo que calcule a média aritmética das 3 notas dos alunos de uma classe. 
-O algoritmo deverá ler, além das notas, o código do aluno e deverá ser encerrado quando o código for igual a zero.
+19) Escreva um algoritmo que calcule a média aritmética das 3 notas
+ dos alunos de uma classe. 
+O algoritmo deverá ler, além das notas, o código do aluno e deverá 
+ser encerrado quando o código for igual a zero.
 Entrada:               Saída:
 0012021                A média do aluno com a matrícula 0012021 é 9.00
 10                     A média do aluno com a matrícula 0022021 é 10.00

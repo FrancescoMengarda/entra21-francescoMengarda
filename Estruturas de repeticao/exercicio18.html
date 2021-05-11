@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(let i = 0; i < 4; i++){
+            media = Number(prompt("Informe a nota do aluno"));
+            if(media >= 0 && media < 5){
+                console.log("D");
+            } else if (media >= 5 && media < 7){
+                console.log("C");
+            } else if (media >=7 && media < 9){
+                console.log("B");
+            } else if (media >= 9 && media <= 10){
+                console.log("A");
+            } else {
+                console.log("Valor inválido inserido\n");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -7,7 +7,25 @@
 </head>
 <body>
     <script>
-        
+        let salario = 0;
+        let filhos = 0;
+        let maiorSalario = 0;
+        let salarioTotal = 0;
+        let entrevistados = 0;
+
+        for (let i = 1; i > 0; i++){
+            salario = Number(prompt("Informe o salário"));
+            if(salario < 0){
+                break;
+            }
+            if(salario > maiorSalario){
+                maiorSalario = salario;
+            }
+            salarioTotal += salario;
+            filhos += Number(prompt("Informe o número de filhos"));
+            entrevistados++;
+        }
+        console.log(`Média salarial: ${salarioTotal / entrevistados}\nMédia filhos: ${filhos / entrevistados}\nMaior salario: ${maiorSalario}\n`)
     </script>
 </body>
 </html>

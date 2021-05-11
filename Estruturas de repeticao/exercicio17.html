@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>            
+        let votosJB = 0;
+        let votosMN = 0;
+        let votosJS = 0;
+        let votosNulos = 0;
+        let votosBranco = 0;
+        let totalVotos = 0;
+        for(let i = 1; i > 0; i++){
+            let voto = Number(prompt("Insira seu voto:\n1-José Bolinha\n2-Maria Nascimento\n3-João da Silva\n4-Voto Nulo\n5-Voto em Branco\n0-Encerrar votação"));
+            if(voto == 1){
+                votosJB++;
+            } else if(voto == 2){
+                votosMN++;
+            } else if(voto == 3){
+                votosJS++;
+            } else if(voto == 4){
+                votosNulos++;
+            } else if(voto == 5){
+                votosBranco++;
+            } else if(voto == 0){
+                break;
+            } else {
+                votosNulos++;
+            }
+            totalVotos++;
+        }
+        console.log(`Total de votos: ${totalVotos}\nJosé Bolinha: ${votosJB}\nMaria Nascimento: ${votosMN}\nJoão da Silva: ${votosJS}\nNulos: ${votosNulos}\nBranco: ${votosBranco}`);
+    </script>
+</body>
+</html>
