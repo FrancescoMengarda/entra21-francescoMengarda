@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Faça um programa que receba do usuario um vetor com 5 posições. Em seguida, mostre
+o maior e o menor elemento do vetor.
+    <script>
+        let vetor = [];
+        let maior = 0;
+        let menor = 0;
+        for (let i = 0; i < 5; i++){
+            vetor[i] = +prompt(`Informe o ${i + 1} valor`);
+            if (maior === 0){
+                maior = vetor[i];
+            }
+            if (menor === 0){
+                menor = vetor[i];
+            }
+            if (vetor[i] > maior){
+                maior = vetor[i];
+            } else if (vetor[i] < menor) {
+                menor = vetor[i];
+            }
+        }
+        console.log(`O maior número é o ${maior} e o menor número é o ${menor}`);
+    </script>
+</body>
+</html>
