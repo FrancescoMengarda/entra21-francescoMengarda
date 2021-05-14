@@ -10,7 +10,22 @@
 de pessoa. Escrever a mensagem “ACHEI”, se o nome estiver armazenado no vetor de nomes ou 
 “NÃO ACHEI” caso contrário. 
     <script>
-        
+        let nomes = [];
+        let achou = false;
+        for (let i = 0; i < 5; i++){
+            nomes[i] = prompt(`Informe o ${i + 1} nome`);
+        }
+        let pesquisa = prompt("Informe o nome a ser pesquisado");
+        for (let j = 0; j < 5; j++){
+            if (pesquisa == nomes[j]){
+                console.log("ACHEI");
+                achou = true;
+                break;
+            }
+        }
+        if(!achou){
+            console.log("NÃO ACHEI");
+        }
     </script>
 </body>
 </html>

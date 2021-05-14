@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="#deb887">
+    7) Ler um conjunto de numeros, armazenando-os em vetor e calcular o quadrado dos
+    componentes deste vetor, armazenando o resultado em outro vetor. Os conjuntos tem 5
+    elementos cada. Imprimir todos os conjuntos.
+    <script>
+        let vetor1 = [];
+        let vetor2 = [];
+        for (let i = 0; i < 5; i++){
+            vetor1[i] = +prompt(`Informe o ${i + 1} valor`);
+            vetor2[i] = vetor1[i] ** 2;
+        }
+        for (i = 0; i < 5; i++){
+            console.log(`${vetor1[i]} \t`);
+        }
+        for (i = 0; i < 5; i++){
+            console.log(`${vetor2[i]} \t`);
+        }
+    </script>
+</body>
+</html>
