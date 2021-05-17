@@ -23,7 +23,7 @@ a
     <script>
         let vetor1 = [];
         let vetor2 = [];
-        let interseccao = [];
+        let interseccao = "";
         for (let i = 0; i < 5; i++){
             vetor1[i] = prompt(`Informe o ${i + 1}º  valor do vetor 1`);
         }
@@ -31,13 +31,18 @@ a
             vetor2[i] = prompt(`Informe o ${i + 1}º  valor do vetor 2`);
         }
         for (let j = 0; j < 5; j++){
-            for (let i = 0; i < 5; i++){
-                if (vetor1[j] = vetor2[i]){
-                    interseccao[i] = vetor1[i];
+            for (i = 0; i < 5; i++){
+                if(vetor1[j] == vetor2 [i]){
+                    interseccao += vetor1[j];
                 }
             }
-        }
-        console.log(interseccao);
+        }        
+        interseccao = String(interseccao).split("")
+        interseccao.join(", ")
+
+        console.log(`Vetor 1: ${vetor1}`)
+        console.log(`Vetor 2: ${vetor2}`)
+        console.log(`Intersecção : ${interseccao}`)
     </script>
 </body>
 </html>
