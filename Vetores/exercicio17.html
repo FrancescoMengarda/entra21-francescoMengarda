@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    17) Crie um script que armazene 10 números aleatórios dentro de um vetor (utilize a função Math.random()),
+ordene o vetor de forma crescente. (**NÃO UTILIZAR A FUNÇÃO SORT**)
+    <script>
+        min = Math.ceil(1);
+        max = Math.floor(11);
+        let vetor = [];
+        let vetorOrg = [];
+        
+        for (let i = 0; i < 10; i++){
+            vetor[i] = Math.floor(Math.random() * (max - min)) + min;
+            if (vetor[i] > vetor[i--]){
+                vetorOrg[i] = vetor[i];
+            }
+        }
+        console.log(vetor);
+    </script>
+</body>
+</html>
