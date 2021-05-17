@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    15) Escreva um script que leia 2 vetores com 5 posições. Verifique a intersecção
+dos vetores (valores que aparecem em ambos) e armazene esses valores em um terceiro vetor.
+Ao final, mostra na tela os 3 vetores.
+Entrada:              Saída:
+a                     Vetor 1: ["a", "b", "c", "d", "e"]
+b                     Vetor 2: ["f", "g", "h", "i", "a"]
+c                     Intersecção: ["a"]
+d
+e
+f
+g
+h
+i
+a
+    <script>
+        let vetor1 = [];
+        let vetor2 = [];
+        let interseccao = [];
+        for (let i = 0; i < 5; i++){
+            vetor1[i] = prompt(`Informe o ${i + 1}º  valor do vetor 1`);
+        }
+        for (let i = 0; i < 5; i++){
+            vetor2[i] = prompt(`Informe o ${i + 1}º  valor do vetor 2`);
+        }
+        for (let j = 0; j < 5; j++){
+            for (let i = 0; i < 5; i++){
+                if (vetor1[j] = vetor2[i]){
+                    interseccao[i] = vetor1[i];
+                }
+            }
+        }
+        console.log(interseccao);
+    </script>
+</body>
+</html>

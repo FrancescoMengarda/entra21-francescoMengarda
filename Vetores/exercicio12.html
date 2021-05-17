@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    12) Faça um programa que simule o lançamento de 100 dados (Utilize a função Math.random()). Armazene Os
+    lançamentos em um vetor e mostre a quantidade de vezes que cada número (1..6) apareceu.
+    <script>
+        min = Math.ceil(1);
+        max = Math.floor(7);
+        let vetor = [];
+        let num1 = 0;
+        let num2 = 0;
+        let num3 = 0;
+        let num4 = 0;
+        let num5 = 0;
+        let num6 = 0;
+        
+        for (let i = 0; i < 100; i++){
+            vetor[i] = Math.floor(Math.random() * (max - min)) + min;
+            switch (vetor[i]){
+                case 1:
+                num1++;
+                break;
+                case 2:
+                num2++;
+                break;
+                case 3:
+                num3++;
+                break;
+                case 4:
+                num4++;
+                break;
+                case 5:
+                num5++;
+                break;
+                case 6:
+                num6++;
+                break;
+            }
+        }
+        console.log(`${num1}\n${num2}\n${num3}\n${num4}\n${num5}\n${num6}`);
+    </script>
+</body>
+</html>
