@@ -12,12 +12,25 @@ ordene o vetor de forma crescente. (**NÃO UTILIZAR A FUNÇÃO SORT**)
         min = Math.ceil(1);
         max = Math.floor(11);
         let vetor = [];
-        let vetorOrg = [];
+        let vetorOrg = 0;
         
         for (let i = 0; i < 10; i++){
             vetor[i] = Math.floor(Math.random() * (max - min)) + min;
-            if (vetor[i] > vetor[i--]){
-                vetorOrg[i] = vetor[i];
+        }
+        for (let i = 0 ; i < 10; i++){
+            if(vetor[i] > vetor[i + 1]) {
+                vetorOrg = vetor[i]
+                vetor[i] = vetor[i + 1]
+                vetor[i + 1] = vetorOrg
+            }
+
+            for(let i = 0; i < 10; i++) {
+                if(vetor[i] > vetor[i + 1]) {
+                vetorOrg = vetor[i]
+                vetor[i] = vetor[i + 1]
+                vetor[i + 1] = vetorOrg
+            }
+
             }
         }
         console.log(vetor);
