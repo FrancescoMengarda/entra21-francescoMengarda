@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    16) Escreva um script que leia 2 números e crie um vetor que armazene os valores presentes 
+no intervalo entre os 2 números com o passo 2. Após isso, mostre na tela o vetor.
+Entrada:              Saída:
+1                     1
+10                    3
+                      5
+                      7
+                      9
+-----------------------------
+2                     2
+10                    4
+                      6
+                      8
+                      10
+    <script>
+        let vetor = [];
+        for (let i = 0; i < 2; i++){
+            vetor[i] = +prompt(`Informe o ${i + 1} valor`);
+        }
+        for (let i = vetor[0]; i < vetor[1]; i += 2){
+            console.log(i);
+        }
+    </script>
+</body>
+</html>
