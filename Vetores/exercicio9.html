@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    9) Faça um programa que leia um vetor de 8 posições e, em seguida, leia também dois
+valores X e Y quaisquer correspondentes a duas posições no vetor. Ao final seu programa
+deverá escrever a soma dos valores encontrados nas respectivas posições X e Y. Se o usuário
+digitar valores inválidas para X ou Y mostre uma mensagem de erro e peça novos valores até 
+que ambos os valores sejam válidos.
+    <script>
+        let vetor = [];
+        for (let i = 0; i < 8; i++){
+            vetor[i] = +prompt(`Informe o ${i + 1} valor`);
+        }
+        let x = 9;
+        let y = 9;
+        for (let i = 1; i > 0; i++){
+            x = +prompt("Informe o valor de X");
+            y = +prompt("Informe o valor de Y");
+            if (x > 8 || x < 0 || y > 8 || y < 0){
+                continue;
+            }
+            break;
+        }
+        console.log(`${vetor[x] + vetor[y]}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    11) Fazer um programa para ler 5 valores e, em seguida, mostrar a posição onde se
+encontram o maior e o menor valor.
+    <script>
+        let vetor = [];
+        let maior;
+        let menor;
+        for (let i = 0; i < 5; i++){
+            vetor[i] = +prompt(`Informe o ${i + 1} valor`);
+            if (maior == null){
+                maior = i;
+            }
+            if (menor == null){
+                menor = i;
+            }
+            if (vetor[i] > maior){
+                maior = i;
+            } else if (vetor[i] < menor){
+                menor = i;
+            }
+        }
+        console.log(maior, menor);
+    </script>
+</body>
+</html>
