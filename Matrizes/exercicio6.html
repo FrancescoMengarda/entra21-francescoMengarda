@@ -14,13 +14,28 @@ Pedro  8    8   8
     <script>
         let matriz = [];
         let mostrarMatriz = "";
-        let notas = 0;
 
         for (let i = 0; i < 3; i++) {
             matriz[i] = [];
-            for (let j = 0; j < 4; j++) {
-                matriz[i][j] = prompt(`Informe o valor a ser armazenado na linha ${i + 1}, coluna ${j + 1}:`);
-                mostrarMatriz += matriz[i][j] + "\t";
+            for (let j = 0; j < 6; j++) {
+                if (j == 0) {
+                    matriz[i][j] = prompt(`Informe o nome do ${i + 1}º aluno`);
+                    mostrarMatriz += matriz[i][j] + "\t";
+                } else if (j >= 1 && j <= 3) {
+                    matriz[i][j] = +prompt(`Informe a ${j}ª nota do aluno`);
+                    mostrarMatriz += matriz[i][j] + "\t";
+                } else if (j == 4) {
+                    matriz[i][j] = ((matriz[i][1] + matriz[i][2] + matriz[i][3]) / 3).toFixed(2);
+                    mostrarMatriz += matriz[i][j] + "\t";
+                } else if (j == 5){
+                    if(matriz[i][4] >= 6){
+                        matriz[i][j] = "Aprovado";
+                    } else {
+                        matriz[i][j] = "Reprovado";
+                    }
+                    mostrarMatriz += matriz[i][j] + "\t";
+                }
+
             }
             mostrarMatriz += "\n";
         }
