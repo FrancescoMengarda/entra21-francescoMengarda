@@ -33,13 +33,13 @@ uma matriz no seguinte formato:
 João   10   9   8
 Maria  7    7   7   
 Pedro  8    8   8
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Após isso calcule a média de cada aluno e adicione a média na linha correspondente ao aluno
 da matriz:
 João   10   9   8   9
 Maria  5    5   5   5
 Pedro  8    8   8   8
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Ao final mostre a matriz no formato abaixo e informe a situação dos alunos ("Aprovado" se a média for maior ou igual a 6
 ou reprovado se for menor que 6).
 Entrada:                  Saída:

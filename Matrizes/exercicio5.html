@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    5. Leia uma matriz de 3 x 3 elementos. Calcule a soma dos elementos que estão acima da
+diagonal principal.
+    <script>
+        let matriz = [];
+        let mostrarMatriz = "";
+        let soma = 0;
+
+        for (let i = 0; i < 3; i++) {
+            matriz[i] = [];
+            for (let j = 0; j < 3; j++) {
+                matriz[i][j] = +prompt(`Informe o valor a ser armazenado na linha ${i + 1}, coluna ${j + 1}:`);
+                if (j > i){
+                    soma += matriz[i][j];
+                }
+                mostrarMatriz += matriz[i][j] + "\t";
+            }
+            mostrarMatriz += "\n";
+        }
+        console.log(mostrarMatriz);
+        console.log(soma);
+
+    </script>
+</body>
+</html>
