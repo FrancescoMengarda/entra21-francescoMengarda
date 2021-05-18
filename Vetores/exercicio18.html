@@ -18,10 +18,14 @@ c) A multiplicação dos números ímpares
         for (let i = 0; i < 10; i++){
             vetor[i] = Math.floor(Math.random() * (11 - 1)) + 1;
             if (vetor[i] % 2 == 0) {
-                
+                soma += vetor[i];
+            } else {
+                multImpares *= vetor[i];
             }
         }
         console.log(vetor);
+        console.log(soma);
+        console.log(multImpares);
     </script>
 </body>
 </html>
