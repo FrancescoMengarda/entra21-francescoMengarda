@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    4) Crie uma script que receba o valor de 3 notas, utilize uma função para calcular a média e
+mostre ela na tela.
+    <script>
+        let a = +prompt("Informe a primeira nota"),
+            b = +prompt("Informe a segunda nota"),
+            c = +prompt("Informe a terceira nota");
+
+        let media = (a, b, c) => console.log(`A média é ${((a + b + c) / 3).toFixed(2)}`);
+
+        media(a, b, c);
+    </script>
+</body>
+</html>
