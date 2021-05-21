@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    19) Elabore uma função que receba um vetor e retorne outro vetor que tenha todos os números que são pares e estão em
+índices pares do vetor.
+    <script>
+        let vetor = [];
+        for (let i = 0; i < 50; i++){
+            vetor[i] = Math.floor(Math.random() * (10 - 1)) + 1;
+        }
+        function paresPares(vetor){
+            let pares2x = [];
+            for(let i = 0; i < 50; i++){
+                if((vetor[i] % 2 === 0) && (i % 2 === 0)){
+                    pares2x.push(vetor[i]);
+                }
+            }
+            return pares2x;
+        }
+        console.log(paresPares(vetor));
+    </script>
+</body>
+</html>
