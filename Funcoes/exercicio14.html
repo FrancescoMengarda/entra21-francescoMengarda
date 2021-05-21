@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>14) Faça uma função que recebe, por parâmetro, um valor inteiro e positivo e retorna o número de divisores 
+    desse valor.
+    <script>
+        "use strict"
+        function checkDivisor(num){
+            let divisores = [];
+            for (let i = num; i > 0; i--){
+                if(num % i === 0){
+                    divisores.push(i);
+                }
+            }
+            return divisores;
+        }
+        let numero = 0;
+        for (let i = 1; i > 0; i++){
+            numero = +prompt("Informe um número");
+            if (numero > 0 && Number.isInteger(numero)){
+                break;
+            }
+            console.log("Informe um valor válido");
+        }
+        console.log(checkDivisor(numero));
+    </script>
+</body>
+</html>

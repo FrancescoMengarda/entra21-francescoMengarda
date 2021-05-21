@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    13) Faça uma função que recebe a idade de uma pessoa em anos (365 dias), meses e dias e retorna essa idade expressa em dias.
+    <script>
+        let vetorIdade = [];
+        for (let i = 0; i < 3; i++){
+            vetorIdade[i] = +prompt("Informe primeiro o ano, em seguida os meses e os dias");
+        }
+        function idadeDias(vetorIdade){
+            let idade = 0;
+            idade += vetorIdade[0] * 365;
+            idade += vetorIdade[1] * 30;
+            idade += vetorIdade[2];
+            
+            return idade;
+        }
+        console.log(idadeDias(vetorIdade));
+    </script>
+</body>
+</html>

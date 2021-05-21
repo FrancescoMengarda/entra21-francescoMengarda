@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    12) Faça um procedimento que lê 50 valores inteiros e retorna o maior e o menor deles. 
+Utilize a função Math.random() para gerar valores aleatórios entre 1-1000.
+    <script>
+        "use strict"
+        let vetor = []; 
+        let maior = 0;
+        let menor = 1000;
+        for (let i = 0; i < 50; i++){
+            vetor[i] = Math.floor(Math.random() * (1000 - 1)) + 1;
+        }
+        function maiorMenor(vetor){
+
+            for (let i = 0; i < 50; i++){
+                if (vetor[i] > maior){
+                    maior = vetor[i];
+                } else if (vetor[i] < menor){
+                    menor = vetor[i];
+                }
+            }
+        }
+        maiorMenor(vetor);
+        console.log(maior, menor);
+    </script>
+</body>
+</html>
