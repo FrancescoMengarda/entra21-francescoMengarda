@@ -6,8 +6,21 @@
     <title>Document</title>
 </head>
 <body>
+    8) Crie uma função que recebe um número como parâmetro e retorne uma string com o símbolo "#" na quantidade
+especificada no parâmetro.
+Exemplo:
+mostraSimbolo(10) // ##########
     <script>
         "use strict"
+        let quantidade = +prompt("Informe a quantidade a ser repetida");
+        let vetor = [];
+        function mostraSimbolo(quantidade){
+            for (let i = 0; i < quantidade; i++){
+                vetor.push("#");
+            }
+        }
+        mostraSimbolo(quantidade);
+        console.log((vetor).toString());
     </script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    11) Faça uma função que receba um array de 5 elementos. Modifique o vetor[1] = 10 e vetor[2] = 30 e retorne o vetor modificado. 
+Ao final mostre na tela o vetor original e o vetor modificado.
+    <script>
+        "use strict"
+        function troca(){
+            vetorModificado[1] = 10;
+            vetorModificado[2] = 30;
+        }
+        let vetor = [],
+            vetorModificado = [];
+        
+        for (let i = 0; i < 5; i++){
+            vetor[i] = Math.floor(Math.random() * (100 - 1)) + 1;
+            vetorModificado[i] = vetor[i];
+        }
+        troca();
+        console.log(vetor, vetorModificado);
+    </script>
+</body>
+</html>
