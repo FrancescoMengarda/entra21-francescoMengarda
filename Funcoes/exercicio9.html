@@ -12,6 +12,12 @@ Exemplo:
 repetirElemento("oi", 3) // ["oi", "oi", "oi"]
     <script>
         "use strict"
+        
+        function mostraPalavra(palavra, quantidade){
+            for (let i = 0; i < quantidade; i++){
+                vetor.push(palavra);
+            }
+        }
         let palavraQuantidade = [];
         let vetor = [];
         for (let i = 0; i < 2; i++){
@@ -19,11 +25,6 @@ repetirElemento("oi", 3) // ["oi", "oi", "oi"]
                 palavraQuantidade[i] = prompt("Informe a palavra");
             } else {
                 palavraQuantidade[i] = prompt("Informe o número de vezes que se repetirá");
-            }
-        }
-        function mostraPalavra(palavra, quantidade){
-            for (let i = 0; i < quantidade; i++){
-                vetor.push(palavra);
             }
         }
 
