@@ -21,9 +21,9 @@ retorna as suas raízes, caso seja possível calcular. Peça os valores necessá
                 return "Cálculo impossível";
             }
             
-            raizes[0] = (-parametros[1] + delta) / 2 * parametros[0];
-            raizes[1] = (-parametros[1] - delta) / 2 * parametros[0];
-
+            raizes.push((-parametros[1] + Math.sqrt(delta)) / 2 * parametros[0]);
+            raizes.push((-parametros[1] - Math.sqrt(delta)) / 2 * parametros[0]);
+            
             return raizes;
         }
 
