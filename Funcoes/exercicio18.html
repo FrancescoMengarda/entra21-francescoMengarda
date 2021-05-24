@@ -14,16 +14,14 @@ retorna as suas raízes, caso seja possível calcular. Peça os valores necessá
             valores[i] = +prompt(`Informe o ${i + 1}º parâmetro`);
         }
         function bhaskara(parametros){
-            let delta = (parametros[1] ** 2 - 4 * parametros[0] * parametros[2]),
+            let delta = ((parametros[1] ** 2) - (4 * parametros[0] * parametros[2])),
                 raizes = [];
 
-            if (delta < 0){
-                return "Cálculo impossível";
-            }
+            if (delta < 0) return "Cálculo impossível";
             
-            raizes.push((-parametros[1] + Math.sqrt(delta)) / 2 * parametros[0]);
-            raizes.push((-parametros[1] - Math.sqrt(delta)) / 2 * parametros[0]);
-            
+            raizes.push(((-parametros[1] + Math.sqrt(delta)) / 2 * parametros[0]).toFixed(2));
+            raizes.push(((-parametros[1] - Math.sqrt(delta)) / 2 * parametros[0]).toFixed(2));
+
             return raizes;
         }
 
