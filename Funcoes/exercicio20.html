@@ -11,6 +11,7 @@ gerado um número aleatório de 1 a 10. A função deverá retornar se o parâme
 sorteado internamente. Se o valor fornecido foi o sorteado, retorne "Parabéns! O número sorteado foi o X". Se
 não for igual, retorne "Que pena! O número sorteado foi o X". X é o número que foi sorteado.
     <script>
+        "use strict"
         let numero = +prompt("Informe um numero");
         function sortear(num){
             let sorteado = Math.floor(Math.random() * (10 - 1)) + 1;
