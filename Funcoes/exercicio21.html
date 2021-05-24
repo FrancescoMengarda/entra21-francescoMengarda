@@ -17,7 +17,14 @@ Exemplo:
 checarAnoBissexto(2020) // true
 checarAnoBissexto(2100) // false
     <script>
-        
+        function checkBissexto(ano){    
+            if (ano % 4 === 0 && (ano % 100 != 0 || ano % 400 === 0)) return true;
+        }
+
+        let num = +prompt("Informe o ano");
+        let bissexto = false;
+
+        checkBissexto(num) ? console.log(`O ano ${num}, é bissexto`) : console.log(`O ano ${num}, não é bissexto`);
     </script>
 </body>
 </html>
