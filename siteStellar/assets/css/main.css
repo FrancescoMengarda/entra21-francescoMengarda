@@ -1,0 +1,23 @@
+@import url(fontawesome-all.min.css);
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
+@font-face {
+	font-family: 'brands';
+	src: url('') format('woff2'),
+		url('') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+  }
+  
+
+.logo, .img-logo{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	background-color: black;
+}
+#header{
+	background-color:whitesmoke;
+	text-align: center;
+	font-family: 'brands';
+} 
