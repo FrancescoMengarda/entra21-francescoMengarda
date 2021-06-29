@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Pop Art';
-  src: url('PopArt-Regular.woff2') format('woff2'),
-      url('PopArt-Regular.woff') format('woff');
+  src: url('PopArt-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,16 +8,16 @@
 
 
   
-  body {
-    font-size: 60px;
-  }
-  
-  .inner{
-    transform: rotateX(10deg) rotateZ(-10deg);
-    width: 11px;
-    display: inline-block;
-    height: auto;
-    font-family: 'Pop Art';
-    color: black;
-    position: fixed;
-  }
+body {
+  font-size: 60px;
+}
+
+.inner{
+  transform: rotateX(10deg) rotateZ(-10deg);
+  width: 11px;
+  display: inline-block;
+  height: auto;
+  font-family: 'Pop Art';
+  color: black;
+  position: fixed;
+}
